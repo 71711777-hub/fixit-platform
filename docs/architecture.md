@@ -6,7 +6,7 @@ FixIT utilizará una arquitectura cliente-servidor que separa la interfaz de usu
 
 La aplicación web responsive será desarrollada con React y se comunicará mediante HTTPS con una API REST implementada utilizando Node.js y Express.
 
-La información persistente será almacenada en PostgreSQL. La arquitectura contempla además integraciones externas para servicios de geolocalización y procesamiento de pagos.
+La información persistente será almacenada en MySQL. La arquitectura contempla además integraciones externas para servicios de geolocalización y procesamiento de pagos.
 
 ## 2. Diagrama de arquitectura
 
@@ -19,7 +19,7 @@ flowchart TD
 
     C[Backend API REST<br/>Node.js + Express<br/>Render]
 
-    D[(PostgreSQL)]
+    D[(MySQL)]
 
     E[API de Mapas y Geolocalización<br/>Proveedor por definir]
 
@@ -72,7 +72,7 @@ Responsabilidades:
 ### Base de datos
 
 Tecnología:
-- PostgreSQL
+- MySQL
 
 Información prevista:
 - Usuarios.
@@ -111,7 +111,7 @@ FixIT no almacenará directamente los datos de tarjetas de los usuarios.
 | UX/UI | Figma |
 | Frontend | React |
 | Backend | Node.js + Express |
-| Base de datos | PostgreSQL |
+| Base de datos | MySQL |
 | Control de versiones | Git + GitHub |
 | Pruebas API | Postman |
 | Despliegue frontend | Vercel |
@@ -144,7 +144,7 @@ Estas ramas se crearán cuando comience el desarrollo de cada funcionalidad.
 | Rama develop | Configurada |
 | Figma | En elaboración |
 | Entorno de desarrollo local | Pendiente de verificación |
-| PostgreSQL | Planificado |
+| MySQL | Planificado |
 | Vercel | Planificado |
 | Render | Planificado |
 | API de mapas | Proveedor por definir |
@@ -156,6 +156,6 @@ Se seleccionó una arquitectura cliente-servidor porque permite separar las resp
 
 React permitirá desarrollar una interfaz web responsive, mientras que Node.js y Express permitirán implementar una API REST para centralizar la lógica de negocio.
 
-PostgreSQL fue seleccionado debido a que FixIT manejará principalmente información estructurada y relacionada, como usuarios, técnicos, especialidades, incidencias, citas, pagos y calificaciones.
+MySQL fue seleccionado debido a que FixIT manejará principalmente información estructurada y relacionada, como usuarios, técnicos, especialidades, incidencias, citas, pagos y calificaciones.
 
 La separación de frontend, backend y base de datos permitirá desarrollar e integrar funcionalidades progresivamente durante los siguientes Sprints.
