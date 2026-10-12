@@ -1,0 +1,215 @@
+/* VISTA: PERFIL DETALLADO DEL TÉCNICO */
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.profile-card {
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 750px;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+/* --- BOTÓN DE VOLVER --- */
+.btn-back {
+  background: none;
+  border: none;
+  color: #6B7280;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.btn-back:hover {
+  color: #111827;
+}
+
+/* --- CABECERA (FOTO Y TÍTULO) --- */
+.profile-header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.profile-avatar-large {
+  width: 120px;
+  height: 120px;
+  background-color: #F3F4F6;
+  border: 2px dashed #D1D5DB;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9CA3AF;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.profile-title-area {
+  flex: 1;
+}
+
+.profile-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-title-row h2 {
+  font-size: 1.75rem;
+  color: #111827;
+  margin: 0;
+}
+
+.profile-specialty {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.profile-location {
+  font-size: 0.9rem;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+/* --- GRILLA DE ESTADÍSTICAS --- */
+.profile-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-box {
+  background-color: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.profile-divider {
+  border: none;
+  border-top: 1px solid #E5E7EB;
+  margin-bottom: 2rem;
+}
+
+/* --- CONTENIDO (BIOGRAFÍA Y CERTIFICADOS) --- */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.content-section h3 {
+  font-size: 1.15rem;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  font-size: 0.95rem;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+.certifications-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.certifications-list li {
+  font-size: 0.95rem;
+  color: #374151;
+  background-color: #F9FAFB;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #F3F4F6;
+}
+
+/* --- FOOTER (TARIFA Y BOTÓN) --- */
+.profile-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F9FAFB;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 0.85rem;
+  color: #6B7280;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.price-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563EB;
+}
+
+.profile-footer .btn-primary {
+  padding: 1rem 2.5rem;
+  font-size: 1.05rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-title-row {
+    flex-direction: column;
+  }
+  .profile-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .profile-footer .btn-primary {
+    width: 100%;
+  }
+}

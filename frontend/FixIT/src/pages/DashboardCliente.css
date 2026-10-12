@@ -1,0 +1,491 @@
+
+.dashboard-cliente {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 44px 0 64px;
+  color: #011425;
+}
+
+.dashboard-bienvenida {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 38px;
+  border-radius: 20px;
+  background: #2563eb;
+  color: #fff;
+}
+
+.dashboard-etiqueta {
+  color: #ffdc91;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.dashboard-bienvenida h1 {
+  margin: 12px 0;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.dashboard-bienvenida p {
+  max-width: 560px;
+  margin: 0;
+  color: #d0dbe5;
+  line-height: 1.7;
+}
+
+.dashboard-boton-principal,
+.dashboard-boton-secundario {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.dashboard-boton-principal {
+  flex-shrink: 0;
+  background: #ffdc91;
+  color: #011425;
+}
+
+.dashboard-boton-principal:hover,
+.dashboard-boton-secundario:hover {
+  transform: translateY(-2px);
+}
+
+.dashboard-accesos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 32px 0 44px;
+}
+
+.dashboard-card {
+
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 26px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  border-color: #ffdc91;
+  box-shadow: 0 12px 30px rgb(1 20 37 / 7%);
+}
+
+.dashboard-icono {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 12px;
+  background: #fff3d5;
+  color: #011425;
+  font-size: 1.8rem;
+}
+
+.dashboard-card h2 {
+  margin: 20px 0 10px;
+  font-size: 1.12rem;
+}
+
+.dashboard-card p,
+.dashboard-seccion-header p {
+  color: #64748b;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.dashboard-card p {
+  flex: 1;
+  margin: 0 0 20px;
+}
+
+.dashboard-enlace {
+  color: #075985;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.dashboard-incidencias {
+  padding-top: 8px;
+}
+
+.dashboard-seccion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.dashboard-seccion-header h2 {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+}
+
+.dashboard-seccion-header p {
+  margin: 0;
+}
+
+.dashboard-proximamente {
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.8rem;
+}
+
+.dashboard-vacio {
+  padding: 36px 20px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.dashboard-vacio-icono {
+  color: #64748b;
+  font-size: 2.2rem;
+}
+
+.dashboard-vacio h3 {
+  margin: 12px 0;
+}
+
+.dashboard-vacio p {
+  max-width: 540px;
+  margin: 0 auto 22px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.dashboard-boton-secundario {
+  background: #011425;
+  color: #fff;
+}
+
+/* =========================================
+   HISTORIAL DE INCIDENCIAS - FIXIT
+========================================= */
+
+.dashboard-incidencias {
+  margin-top: 36px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e8edf3;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(1, 20, 37, 0.04);
+}
+
+.dashboard-seccion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.dashboard-seccion-header h2 {
+  margin: 0 0 7px;
+  color: #011425;
+  font-size: 23px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+}
+
+.dashboard-seccion-header p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.dashboard-proximamente {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: #edf4fa;
+  color: #234766;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Estado vacío y carga */
+
+.dashboard-vacio {
+  padding: 42px 20px;
+  text-align: center;
+  background: #f8fafc;
+  border: 1px dashed #d8e1eb;
+  border-radius: 16px;
+}
+
+.dashboard-vacio-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 16px;
+  border-radius: 18px;
+  background: #eaf2f9;
+  color: #123c5a;
+  font-size: 28px;
+}
+
+.dashboard-vacio h3 {
+  margin: 0 0 9px;
+  color: #011425;
+  font-size: 18px;
+}
+
+.dashboard-vacio p {
+  max-width: 440px;
+  margin: 0 auto 20px;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Lista de solicitudes */
+
+.dashboard-lista-incidencias {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dashboard-incidencia-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e5ebf2;
+  border-radius: 16px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.dashboard-incidencia-item:hover {
+  border-color: #b9ccdf;
+  box-shadow: 0 8px 22px rgba(1, 20, 37, 0.06);
+  transform: translateY(-2px);
+}
+
+.dashboard-incidencia-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.dashboard-incidencia-info h3 {
+  margin: 0 0 7px;
+  color: #011425;
+  font-size: 17px;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-incidencia-info p {
+  margin: 0 0 8px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-incidencia-fecha {
+  display: inline-block;
+  margin-top: 7px;
+  color: #8491a3;
+  font-size: 12px;
+}
+
+/* Etiquetas de estado */
+
+.dashboard-incidencia-estado {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #edf2f7;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.dashboard-incidencia-estado::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.dashboard-incidencia-estado.estado-reportada {
+  background: #fff3d6;
+  color: #956300;
+}
+
+.dashboard-incidencia-estado.estado-proceso {
+  background: #e5efff;
+  color: #2459ad;
+}
+
+.dashboard-incidencia-estado.estado-resuelta {
+  background: #dcfce7;
+  color: #167443;
+}
+
+.dashboard-incidencia-estado.estado-cancelada {
+  background: #fee8e7;
+  color: #b42318;
+}
+
+/* Botón secundario */
+
+.dashboard-boton-secundario {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 1px solid #011425;
+  border-radius: 10px;
+  background: #011425;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.dashboard-boton-secundario:hover {
+  background: #123c5a;
+  transform: translateY(-1px);
+}
+
+.dashboard-incidencia-acciones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.dashboard-incidencia-acciones .dashboard-enlace {
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dashboard-incidencia-acciones .dashboard-enlace:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .dashboard-incidencia-acciones {
+    align-items: flex-start;
+    margin-top: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+  .dashboard-incidencias {
+    margin-top: 24px;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .dashboard-seccion-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .dashboard-seccion-header h2 {
+    font-size: 21px;
+  }
+
+  .dashboard-incidencia-item {
+    flex-direction: column;
+    gap: 14px;
+    padding: 17px;
+  }
+
+  .dashboard-incidencia-estado {
+    align-self: flex-start;
+  }
+
+  .dashboard-vacio {
+    padding: 30px 16px;
+  }
+}
+
+
+
+@media (max-width: 800px) {
+  .dashboard-bienvenida {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 28px;
+  }
+
+  .dashboard-accesos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-cliente {
+    width: calc(100% - 28px);
+    padding-top: 24px;
+  }
+
+  .dashboard-bienvenida {
+    padding: 22px;
+  }
+
+  .dashboard-seccion-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

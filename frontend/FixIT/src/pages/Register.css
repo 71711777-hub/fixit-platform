@@ -1,0 +1,146 @@
+/* VISTAS DE AUTENTICACIÓN (LOGIN Y REGISTER) */
+
+/* --- CONTENEDOR GENERAL --- */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  background-color: #F3F4F6;
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- TARJETA BLANCA --- */
+.auth-card {
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #E5E7EB;
+}
+
+/* PESTAÑAS DE NAVEGACIÓN */
+.auth-tabs {
+  display: flex;
+  border-bottom: 1px solid #E5E7EB;
+  margin-bottom: 2rem;
+}
+
+.auth-tabs button, .auth-tabs a {
+  flex: 1;
+  background: none;
+  border: none;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tab-active {
+  color: #111827;
+  border-bottom: 2px solid #111827 !important;
+}
+
+.tab-inactive {
+  color: #6B7280;
+}
+
+/* ESTILOS DEL FORMULARIO Y CAMPOS */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.form-group input, 
+.form-group select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #111827;
+  background-color: #FFFFFF;
+  transition: border-color 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #2563EB; 
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* BOTONES */
+.btn-primary {
+  margin-top: 0.5rem;
+  background-color: #2563EB;
+  color: #FFFFFF;
+  padding: 0.875rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #1D4ED8;
+}
+
+/* ALERTAS Y ESTADOS DE VALIDACIÓN */
+.error-message {
+  background-color: #FEE2E2;
+  color: #B91C1C;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.input-error {
+  border-color: #EF4444 !important;
+}
+
+/* Texto de advertencia debajo del campo afectado */
+.error-text {
+  color: #EF4444;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: -0.25rem;
+}
+
+.success-message {
+  background-color: #D1FAE5;
+  color: #065F46;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 500;
+}

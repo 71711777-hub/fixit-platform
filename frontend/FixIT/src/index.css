@@ -1,0 +1,14 @@
+/* ESTILOS GLOBALES (CSS RESET) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F3F4F6;
+  font-family: 'Inter', sans-serif;
+}

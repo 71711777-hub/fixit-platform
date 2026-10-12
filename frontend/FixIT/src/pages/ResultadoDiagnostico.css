@@ -1,0 +1,107 @@
+/* VISTA: RESULTADO DEL DIAGNÓSTICO */
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.diagnostico-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.diagnostico-card {
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 650px;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+/* --- TIPOGRAFÍA Y SEPARADORES --- */
+.diagnostico-titulo {
+  font-size: 1.5rem;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.diagnostico-divider {
+  border: none;
+  border-top: 1px solid #E5E7EB;
+  margin-bottom: 2rem;
+}
+
+/* --- SECCIONES DE INFORMACIÓN --- */
+.diagnostico-seccion {
+  margin-bottom: 1.5rem;
+}
+
+.seccion-label {
+  font-size: 0.75rem;
+  color: #6B7280;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.categoria-tag {
+  display: inline-block;
+  background-color: #E5E7EB;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.recomendacion-texto {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.precio-texto {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* CAJA DE ALERTA (DISCLAIMER) */
+.alerta-informativa {
+  display: flex;
+  gap: 1rem;
+  background-color: #F3F4F6;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  align-items: flex-start;
+}
+
+.alerta-icono {
+  font-size: 1.25rem;
+}
+
+.alerta-informativa p {
+  font-size: 0.875rem;
+  color: #4B5563;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* BOTONES DE NAVEGACIÓN Y RESPONSIVENESS */
+.diagnostico-acciones {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+  .diagnostico-acciones {
+    flex-direction: column-reverse;
+  }
+  .diagnostico-acciones button {
+    width: 100%;
+  }
+}

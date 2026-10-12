@@ -1,0 +1,36 @@
+/* COMPONENTE: FOOTER GLOBAL */
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.global-footer {
+  border-top: 1px solid #E5E7EB;
+  padding: 2rem 2.5rem;
+  background-color: transparent;
+  margin-top: auto; 
+}
+
+/* --- CONTENIDO INTERNO --- */
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9CA3AF;
+  font-size: 0.875rem;
+}
+
+/* --- ENLACES DEL FOOTER --- */
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #9CA3AF;
+  text-decoration: none;
+}
+
+/* Efecto hover */
+.footer-links a:hover {
+  color: #6B7280;
+}

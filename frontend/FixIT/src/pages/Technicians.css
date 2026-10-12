@@ -1,0 +1,114 @@
+/* LAYOUT PRINCIPAL DE LA VISTA TÉCNICOS */
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.technicians-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  align-items: flex-start;
+}
+
+/* --- SIDEBAR DE FILTROS --- */
+.filters-sidebar {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.filters-sidebar h3 {
+  font-size: 1.125rem;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #E5E7EB;
+  padding-bottom: 0.75rem;
+}
+
+.filter-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+}
+
+.filter-group h4 {
+  font-size: 0.875rem;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #4B5563;
+  cursor: pointer;
+}
+
+/* --- SECCIÓN DE LA LISTA PRINCIPAL --- */
+.technicians-list-section {
+  flex: 1;
+}
+
+.technicians-list-section h2 {
+  font-size: 1.25rem;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.technicians-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* CABECERA DE LA LISTA Y ORDENAMIENTO */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.list-header h2 {
+  margin-bottom: 0;
+}
+
+.sort-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-wrapper label {
+  font-size: 0.875rem;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+.sort-select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  color: #111827;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.sort-select:focus {
+  border-color: #2563EB;
+}
