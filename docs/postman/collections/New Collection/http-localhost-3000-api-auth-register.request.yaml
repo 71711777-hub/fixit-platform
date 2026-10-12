@@ -1,0 +1,23 @@
+$kind: http-request
+name: http://localhost:3000/api/auth/register
+description: ""
+url: http://localhost:3000/api/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"correo\": \"usuario@fixit.com\",\r
+
+    \  \"contrasena\": \"12345678\",\r
+
+    \  \"nombre_completo\": \"Usuario Demo\",\r
+
+    \  \"telefono\": \"999999999\",\r
+
+    \  \"tipo_documento\": \"DNI\",\r
+
+    \  \"nro_documento\": \"12345678\"\r
+
+    }"
+order: 1791346908414
