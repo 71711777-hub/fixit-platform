@@ -1,0 +1,11 @@
+1d847f6 | 2026-10-12 | 71314057-blob | First commit backend
+02ec650 | 2026-10-12 | 71314057-blob | First commit front end
+bf6bee0 | 2026-09-20 | 71711777-hub | Update architecture.md
+45b2d3e | 2026-09-20 | 71711777-hub | Create architecture.md
+7c394d8 | 2026-09-19 | 71711777-hub | Create .gitignore
+b79225f | 2026-09-19 | 71711777-hub | Create README.md
+73f67a6 | 2026-09-19 | 71711777-hub | Create README.md
+475eb27 | 2026-09-19 | 71711777-hub | Update README.md
+0fcd4fa | 2026-09-19 | 71711777-hub | Create README.md
+94b7d07 | 2026-09-19 | 71711777-hub | Update README.md
+3d8ffe0 | 2026-09-19 | 71711777-hub | Initial commit

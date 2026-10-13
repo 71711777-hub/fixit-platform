@@ -1,0 +1,157 @@
+commit 1d847f64c96de2730565d8c3dea70eb6d969e49e
+Author: 71314057-blob <71314057@mail.isil.pe>
+Date:   Mon Oct 12 14:41:37 2026 -0500
+
+    First commit backend
+
+ backend/fixit-backend/.gitignore                   |    4 +
+ backend/fixit-backend/DB/fixit.sql                 | 1266 ++++++++++++++++
+ backend/fixit-backend/README.md                    |  112 ++
+ backend/fixit-backend/package-lock.json            | 1535 ++++++++++++++++++++
+ backend/fixit-backend/package.json                 |   23 +
+ backend/fixit-backend/src/db.js                    |   25 +
+ backend/fixit-backend/src/middleware/auth.js       |   25 +
+ backend/fixit-backend/src/routes/auth.routes.js    |  159 ++
+ .../fixit-backend/src/routes/incidencias.routes.js |  226 +++
+ .../fixit-backend/src/routes/tecnicos.routes.js    |  173 +++
+ backend/fixit-backend/src/routes/triaje.routes.js  |  289 ++++
+ backend/fixit-backend/src/routes/users.routes.js   |   81 ++
+ .../src/scripts/crear-tecnicos-demo.js             |  188 +++
+ backend/fixit-backend/src/server.js                |   67 +
+ .../New Collection/.resources/definition.yaml      |    1 +
+ ...p-localhost-3000-api-auth-register.request.yaml |   23 +
+ docs/postman/globals/workspace.globals.yaml        |    2 +
+ 17 files changed, 4199 insertions(+)
+
+commit 02ec65027bf84a60addccce2941d8db71114c1cd
+Author: 71314057-blob <71314057@mail.isil.pe>
+Date:   Mon Oct 12 14:40:55 2026 -0500
+
+    First commit front end
+
+ frontend/FixIT/.gitignore                         |   24 +
+ frontend/FixIT/README.md                          |   16 +
+ frontend/FixIT/eslint.config.js                   |   21 +
+ frontend/FixIT/index.html                         |   13 +
+ frontend/FixIT/package-lock.json                  | 2535 +++++++++++++++++++++
+ frontend/FixIT/package.json                       |   28 +
+ frontend/FixIT/public/favicon.svg                 |    1 +
+ frontend/FixIT/public/icons.svg                   |   24 +
+ frontend/FixIT/src/App.jsx                        |   48 +
+ frontend/FixIT/src/assets/hero.png                |  Bin 0 -> 13057 bytes
+ frontend/FixIT/src/assets/react.svg               |    1 +
+ frontend/FixIT/src/assets/vite.svg                |    1 +
+ frontend/FixIT/src/components/Footer.css          |   36 +
+ frontend/FixIT/src/components/Footer.jsx          |   18 +
+ frontend/FixIT/src/components/Navbar.css          |  206 ++
+ frontend/FixIT/src/components/Navbar.jsx          |  188 ++
+ frontend/FixIT/src/components/TechnicianCard.css  |  123 +
+ frontend/FixIT/src/components/TechnicianCard.jsx  |   83 +
+ frontend/FixIT/src/index.css                      |   14 +
+ frontend/FixIT/src/main.jsx                       |   10 +
+ frontend/FixIT/src/pages/DashboardCliente.css     |  491 ++++
+ frontend/FixIT/src/pages/DashboardCliente.jsx     |  276 +++
+ frontend/FixIT/src/pages/DetalleIncidencia.css    |  309 +++
+ frontend/FixIT/src/pages/DetalleIncidencia.jsx    |  243 ++
+ frontend/FixIT/src/pages/Home.css                 |  135 ++
+ frontend/FixIT/src/pages/Home.jsx                 |   82 +
+ frontend/FixIT/src/pages/Login.jsx                |   92 +
+ frontend/FixIT/src/pages/RecoverPassword.jsx      |   64 +
+ frontend/FixIT/src/pages/Register.css             |  146 ++
+ frontend/FixIT/src/pages/Register.jsx             |  214 ++
+ frontend/FixIT/src/pages/RegistrarIncidencia.css  |  149 ++
+ frontend/FixIT/src/pages/RegistrarIncidencia.jsx  |  224 ++
+ frontend/FixIT/src/pages/ResultadoDiagnostico.css |  107 +
+ frontend/FixIT/src/pages/ResultadoDiagnostico.jsx |  128 ++
+ frontend/FixIT/src/pages/TechnicianProfile.css    |  215 ++
+ frontend/FixIT/src/pages/TechnicianProfile.jsx    |  123 +
+ frontend/FixIT/src/pages/Technicians.css          |  114 +
+ frontend/FixIT/src/pages/Technicians.jsx          |  174 ++
+ frontend/FixIT/src/pages/Triaje.css               |  145 ++
+ frontend/FixIT/src/pages/Triaje.jsx               |  243 ++
+ frontend/FixIT/src/pages/UserProfile.css          |  206 ++
+ frontend/FixIT/src/pages/UserProfile.jsx          |  292 +++
+ frontend/FixIT/src/services/api.js                |  284 +++
+ frontend/FixIT/vite.config.js                     |    7 +
+ 44 files changed, 7853 insertions(+)
+
+commit bf6bee0ce21ac55f095f0022a236a6304ed32a72
+Author: 71711777-hub <71711777@mail.isil.pe>
+Date:   Sun Sep 20 19:26:00 2026 -0500
+
+    Update architecture.md
+
+ docs/architecture.md | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit 45b2d3eaa9a9cae4cfd5c504f74adeea153946a0
+Author: 71711777-hub <71711777@mail.isil.pe>
+Date:   Sun Sep 20 00:55:41 2026 -0500
+
+    Create architecture.md
+
+ docs/architecture.md | 161 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 161 insertions(+)
+
+commit 7c394d8abc38cea267f61c82174394afc42b3f7b
+Author: 71711777-hub <71711777@mail.isil.pe>
+Date:   Sat Sep 19 23:58:35 2026 -0500
+
+    Create .gitignore
+
+ .gitignore | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit b79225f732ed96bbf4bed12c289d4c249353d2de
+Author: 71711777-hub <71711777@mail.isil.pe>
+Date:   Sat Sep 19 23:57:36 2026 -0500
+
+    Create README.md
+
+ docs/README.md | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+commit 73f67a64c98bda27ec17c49f96e09c051b8a02c6
+Author: 71711777-hub <71711777@mail.isil.pe>
+Date:   Sat Sep 19 23:57:08 2026 -0500
+
+    Create README.md
+
+ backend/README.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 475eb272e447af9aa11cd56b353a9819c7ae255f
+Author: 71711777-hub <71711777@mail.isil.pe>
+Date:   Sat Sep 19 23:56:31 2026 -0500
+
+    Update README.md
+
+ frontend/README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 0fcd4facfc1d7b9ad507cbc9da529ac828777ae2
+Author: 71711777-hub <71711777@mail.isil.pe>
+Date:   Sat Sep 19 23:56:07 2026 -0500
+
+    Create README.md
+
+ frontend/README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 94b7d0783d59c4df7abe55acc5d52f54ffa85960
+Author: 71711777-hub <71711777@mail.isil.pe>
+Date:   Sat Sep 19 23:51:46 2026 -0500
+
+    Update README.md
+
+ README.md | 39 +++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 37 insertions(+), 2 deletions(-)
+
+commit 3d8ffe02aa211b6202758abe91e2440a6a3526f9
+Author: 71711777-hub <71711777@mail.isil.pe>
+Date:   Sat Sep 19 23:47:18 2026 -0500
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
