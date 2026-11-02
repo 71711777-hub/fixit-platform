@@ -1,0 +1,65 @@
+/* FixIT · Reserva de servicio: estilos para el JSX modernizado */
+.reserva-pagina{min-height:100vh;background:#f6f8fc;color:#102a43;padding:32px 20px 72px}
+.reserva-pagina *,.reserva-pagina *::before,.reserva-pagina *::after{box-sizing:border-box}
+.reserva-contenedor{max-width:1120px;margin:0 auto}
+.reserva-volver{border:0;background:none;color:#52718d;font-weight:700;cursor:pointer;padding:8px 0}
+.reserva-volver:hover{color:#011425}
+.reserva-encabezado{margin:28px 0 32px}
+.reserva-etiqueta,.reserva-resumen-etiqueta{color:#32628b;font-size:11px;font-weight:800;letter-spacing:1.7px}
+.reserva-encabezado h1{margin:12px 0;font-size:clamp(30px,4vw,44px);line-height:1.15;letter-spacing:-1.5px}
+.reserva-encabezado p{color:#6b7e90;line-height:1.7;margin:0}
+.reserva-layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;align-items:start;gap:24px}
+.reserva-formulario{display:grid;gap:20px;min-width:0}
+.reserva-panel,.reserva-resumen{background:#fff;border:1px solid #e5edf4;border-radius:22px;box-shadow:0 12px 40px rgba(15,40,65,.045)}
+.reserva-panel{padding:28px}
+.reserva-panel-titulo{display:flex;align-items:flex-start;gap:16px;margin-bottom:24px}
+.reserva-paso{display:grid;place-items:center;flex-shrink:0;width:42px;height:42px;background:#e9f2fb;color:#12486c;border-radius:13px;font-weight:800}
+.reserva-panel-titulo h2{font-size:19px;margin:0 0 7px}
+.reserva-panel-titulo p{color:#7a8a9b;font-size:13px;line-height:1.5;margin:0}
+.reserva-campo{display:grid;gap:10px;font-size:13px;font-weight:700}
+.reserva-campo select,.reserva-campo input{display:block;width:100%;min-width:0;padding:14px 15px;background:#fbfdff;border:1px solid #dbe5ef;border-radius:12px;font:inherit;font-size:14px;color:#1c354a;outline:none}
+.reserva-campo select:focus,.reserva-campo input:focus{border-color:#3676ad;box-shadow:0 0 0 3px #dceeff}
+.reserva-fecha{max-width:320px}
+.reserva-opciones,.reserva-opciones-hora{display:flex;flex-wrap:wrap;gap:10px}
+.reserva-opcion{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border:1px solid #dce6ef;background:#fff;border-radius:12px;font-weight:700;color:#38536a;cursor:pointer;transition:.2s ease}
+.reserva-opcion:hover,.reserva-hora:hover{border-color:#2e6795}
+.reserva-opcion.seleccionada,.reserva-hora.seleccionada{background:#ebf5ff;border-color:#216399;color:#104b79;box-shadow:0 0 0 1px #216399 inset}
+.reserva-radio{width:15px;height:15px;border:2px solid #b6c8d8;border-radius:50%}
+.reserva-opcion.seleccionada .reserva-radio{border:5px solid #216399}
+.reserva-horarios{margin-top:26px;padding-top:20px;border-top:1px solid #edf2f6}
+.reserva-horarios h3{margin:0 0 15px;font-size:15px}
+.reserva-hora{padding:12px 17px;background:#fff;border:1px solid #dce6ef;border-radius:10px;color:#344e63;font-weight:750;cursor:pointer}
+.reserva-confirmacion{margin:14px 0 0;color:#168052;font-size:13px;font-weight:700}
+.reserva-ayuda{color:#6e8091;line-height:1.7;font-size:14px}
+.reserva-alerta{background:#fff0ee;color:#a82c26;border-radius:10px;padding:12px;font-size:13px;line-height:1.5}
+.reserva-resumen{padding:27px;position:sticky;top:24px}
+.reserva-resumen h2{margin:9px 0 20px;font-size:23px}
+.reserva-resumen-fila{display:grid;gap:6px;padding:14px 0;border-top:1px solid #eef2f6}
+.reserva-resumen-fila span{color:#78899a;font-size:12px}
+.reserva-resumen-fila strong{font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+.reserva-resumen-nota{margin:18px 0;background:#f0f6fb;color:#587086;padding:13px;border-radius:12px;font-size:12px;line-height:1.6}
+.reserva-boton-confirmar{width:100%;padding:15px 20px;background:#011425;color:#fff;border:0;border-radius:12px;font-size:14px;font-weight:800;cursor:pointer;transition:.2s ease}
+.reserva-boton-confirmar:hover:not(:disabled){background:#16496b;transform:translateY(-1px)}
+.reserva-boton-confirmar:disabled{opacity:.45;cursor:not-allowed}
+.reserva-resumen-pie{color:#8a9aab;font-size:11px;text-align:center;line-height:1.6}
+/* Modal de confirmación estilo ticket */
+.reserva-modal-fondo{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:20px;background:rgba(1,20,37,.7);backdrop-filter:blur(5px);overflow-y:auto}
+.reserva-ticket{position:relative;width:min(100%,470px);max-height:calc(100vh - 40px);overflow-y:auto;background:#fff;border-radius:22px;box-shadow:0 24px 90px rgba(0,0,0,.25)}
+.reserva-ticket-cerrar{position:absolute;top:15px;right:16px;width:32px;height:32px;border:0;border-radius:50%;background:#edf2f7;color:#44586a;font-size:24px;cursor:pointer}
+.reserva-ticket-cabecera{padding:32px 32px 25px;text-align:center}
+.reserva-ticket-icono{display:grid;place-items:center;width:60px;height:60px;margin:0 auto 14px;border-radius:50%;background:#dcfce7;color:#15803d;font-size:30px;font-weight:900}
+.reserva-ticket-marca{display:block;color:#123d5a;letter-spacing:2px;font-weight:900;font-size:12px}
+.reserva-ticket-cabecera h2{font-size:22px;line-height:1.3;margin:12px 0 8px}
+.reserva-ticket-cabecera p{margin:0;color:#78899a;font-size:13px;line-height:1.6}
+.reserva-ticket-cuerpo{margin:0 26px;padding:23px 8px;border-top:2px dashed #dbe4ed;border-bottom:2px dashed #dbe4ed}
+.reserva-ticket-identificador{display:grid;gap:5px;margin-bottom:15px;padding:12px;border-radius:10px;background:#f2f6fa}
+.reserva-ticket-identificador span,.reserva-ticket-linea span,.reserva-ticket-precio span{color:#7b8b9a;font-size:12px}
+.reserva-ticket-identificador strong{font-size:12px;overflow-wrap:anywhere}
+.reserva-ticket-linea{display:flex;justify-content:space-between;gap:15px;padding:10px 0}
+.reserva-ticket-linea strong{max-width:65%;text-align:right;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+.reserva-ticket-precio{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:15px;padding-top:20px;border-top:1px solid #e9eef3}
+.reserva-ticket-precio strong{color:#0e3c5d;font-size:20px;text-align:right}
+.reserva-ticket-pie{padding:24px 32px 28px;text-align:center}
+.reserva-ticket-pie p{color:#8a98a7;font-size:12px;line-height:1.5;margin:13px 0 0}
+@media(max-width:850px){.reserva-layout{grid-template-columns:1fr}.reserva-resumen{position:static}}
+@media(max-width:540px){.reserva-pagina{padding:20px 14px 50px}.reserva-panel,.reserva-resumen{padding:20px;border-radius:16px}.reserva-panel-titulo h2{font-size:17px}.reserva-ticket-cabecera{padding:28px 22px 20px}.reserva-ticket-cuerpo{margin:0 17px}.reserva-ticket-pie{padding:20px}.reserva-ticket-linea{gap:8px}}

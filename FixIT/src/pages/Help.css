@@ -1,0 +1,193 @@
+.help-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.help-content {
+  width: 100%;
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Header */
+.help-header {
+  text-align: center;
+}
+
+.help-header h2 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.help-header p {
+  color: #6B7280;
+  font-size: 1rem;
+}
+
+/* Tarjetas rápidas */
+.help-quick-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.help-card {
+  background-color: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 1.75rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.help-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.help-card h3 {
+  font-size: 1.2rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.help-card p {
+  font-size: 0.9rem;
+  color: #6B7280;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.card-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563EB;
+}
+
+/* FAQ Accordion */
+.faq-section h3 {
+  font-size: 1.35rem;
+  color: #111827;
+  margin-bottom: 1.25rem;
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.faq-item:hover {
+  border-color: #D1D5DB;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h4 {
+  font-size: 1rem;
+  color: #1f2937;
+  margin: 0;
+  font-weight: 600;
+}
+
+.faq-icon {
+  font-size: 1.25rem;
+  color: #2563EB;
+  font-weight: bold;
+}
+
+.faq-answer {
+  margin-top: 0.75rem;
+  font-size: 0.92rem;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+/* Banner de soporte */
+.support-banner {
+  background-color: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.support-info h3 {
+  font-size: 1.15rem;
+  color: #1E40AF;
+  margin-bottom: 0.25rem;
+}
+
+.support-info p {
+  font-size: 0.9rem;
+  color: #3B82F6;
+  margin: 0;
+}
+
+.support-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-support-secondary {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #1E40AF;
+  border: 1px solid #BFDBFE;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-support-primary {
+  background-color: #2563EB;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-support-primary:hover {
+  background-color: #1D4ED8;
+}
+
+@media (max-width: 640px) {
+  .support-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
